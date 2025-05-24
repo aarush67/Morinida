@@ -17,33 +17,35 @@
     }
 
     body {
-      background-color: #f9fafb;
-      color: #1f2a44;
+      background-color: #f3f4f6;
+      color: #0f172a;
       line-height: 1.8;
       overflow-x: hidden;
     }
 
     .container {
-      max-width: 1080px;
+      max-width: 1160px;
       margin: 0 auto;
-      padding: 80px 20px;
+      padding: 100px 20px;
     }
 
     header {
       text-align: center;
-      padding: 140px 20px;
-      background: linear-gradient(135deg, #064e3b 0%, #10b981 100%);
+      padding: 180px 20px;
+      background: linear-gradient(135deg, #022c22 0%, #10b981 100%);
       color: white;
-      border-radius: 28px;
-      margin-bottom: 80px;
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+      border-radius: 36px;
+      margin-bottom: 100px;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
       position: relative;
       overflow: hidden;
-      transition: transform 0.3s ease;
+      backdrop-filter: blur(12px);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
     }
 
     header:hover {
-      transform: translateY(-5px);
+      transform: translateY(-10px);
+      box-shadow: 0 20px 56px rgba(0, 0, 0, 0.35);
     }
 
     header::before {
@@ -53,21 +55,21 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.25) 0%, transparent 60%);
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.35) 0%, transparent 60%);
       z-index: 1;
     }
 
     header h1 {
-      font-size: 3.5rem;
-      font-weight: 800;
-      margin-bottom: 20px;
+      font-size: 4rem;
+      font-weight: 900;
+      margin-bottom: 25px;
       position: relative;
       z-index: 2;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
     }
 
     header p {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       font-weight: 300;
       opacity: 0.95;
       position: relative;
@@ -76,181 +78,188 @@
 
     .hero-image {
       width: 100%;
-      max-height: 450px;
+      max-height: 500px;
       object-fit: cover;
-      border-radius: 24px;
-      margin: 60px 0;
-      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      border-radius: 32px;
+      margin: 80px 0;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.25);
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
     }
 
     .hero-image:hover {
-      transform: scale(1.03);
-      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+      transform: scale(1.05);
+      box-shadow: 0 18px 56px rgba(0, 0, 0, 0.3);
     }
 
     .content {
-      background: white;
-      padding: 70px;
-      border-radius: 28px;
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
-      margin-bottom: 80px;
-      transition: transform 0.3s ease;
+      background: rgba(255, 255, 255, 0.97);
+      padding: 90px;
+      border-radius: 36px;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+      margin-bottom: 100px;
+      backdrop-filter: blur(10px);
+      transition: transform 0.5s ease;
     }
 
     .content:hover {
-      transform: translateY(-5px);
+      transform: translateY(-10px);
     }
 
     h2 {
-      color: #1a3c34;
-      font-size: 2.6rem;
-      font-weight: 700;
-      margin-bottom: 40px;
-      border-bottom: 4px solid #ecfdf5;
-      padding-bottom: 15px;
+      color: #0f3b31;
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 50px;
+      border-bottom: 5px solid #d1fae5;
+      padding-bottom: 20px;
       transition: color 0.3s ease;
     }
 
     h2:hover {
-      color: #064e3b;
+      color: #022c22;
     }
 
-    ol {
-      padding-left: 40px;
-      margin-bottom: 60px;
+    ol, ul {
+      padding-left: 50px;
+      margin-bottom: 80px;
     }
 
     li {
-      margin-bottom: 35px;
-      font-size: 1.3rem;
-      color: #2d3748;
+      margin-bottom: 45px;
+      font-size: 1.4rem;
+      color: #1e293b;
       transition: color 0.3s ease;
     }
 
     li:hover {
-      color: #1f2a44;
+      color: #0f172a;
     }
 
     li strong {
-      color: #064e3b;
-      font-weight: 600;
+      color: #022c22;
+      font-weight: 700;
+    }
+
+    .tip, .highlight, .benefits {
+      padding: 50px;
+      border-radius: 18px;
+      margin: 70px 0;
+      font-size: 1.35rem;
+      color: #0f3b31;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .tip:hover, .highlight:hover, .benefits:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
     }
 
     .tip {
-      background: #ecfdf5;
-      padding: 35px;
-      border-left: 8px solid #064e3b;
-      border-radius: 14px;
-      margin: 50px 0;
-      font-size: 1.25rem;
-      color: #1a3c34;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      transition: transform 0.3s ease;
-    }
-
-    .tip:hover {
-      transform: translateY(-3px);
+      background: #d1fae5;
+      border-left: 10px solid #022c22;
     }
 
     .highlight {
-      background: #f0f9ff;
-      padding: 30px;
-      border-radius: 14px;
-      margin: 50px 0;
-      font-size: 1.25rem;
-      color: #1a3c34;
-      border-left: 8px solid #0288d1;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      transition: transform 0.3s ease;
+      background: #e0f2fe;
+      border-left: 10px solid #0369a1;
     }
 
-    .highlight:hover {
-      transform: translateY(-3px);
+    .benefits {
+      background: #f0fdf4;
+      border-left: 10px solid #059669;
     }
 
     a {
-      color: #0288d1;
+      color: #0f3b31;
       text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s ease, text-decoration 0.3s ease;
+      font-weight: 400;
+      transition: text-decoration 0.3s ease;
     }
 
     a:hover {
-      color: #01579b;
       text-decoration: underline;
     }
 
     footer {
       text-align: center;
-      margin-top: 80px;
-      color: #6b7280;
-      font-size: 1.1rem;
+      margin-top: 100px;
+      color: #475569;
+      font-size: 1.2rem;
       font-weight: 300;
     }
 
     footer a {
-      color: #0288d1;
-      font-weight: 500;
+      color: #0f3b31;
+      font-weight: 400;
     }
 
     footer a:hover {
-      color: #01579b;
+      text-decoration: underline;
     }
 
     @media (max-width: 600px) {
       header h1 {
-        font-size: 2.8rem;
+        font-size: 3.2rem;
       }
 
       header p {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
       }
 
       .container {
-        padding: 60px 15px;
+        padding: 80px 15px;
       }
 
       .content {
-        padding: 40px;
+        padding: 60px;
       }
 
       h2 {
-        font-size: 2.2rem;
+        font-size: 2.6rem;
       }
 
       li {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
       }
 
       .hero-image {
-        max-height: 380px;
+        max-height: 420px;
       }
 
-      .tip, .highlight {
-        padding: 25px;
-        font-size: 1.15rem;
+      .tip, .highlight, .benefits {
+        padding: 35px;
+        font-size: 1.25rem;
       }
     }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <header>
       <h1>Growing Organic Moringa from Seed</h1>
-      <p>A premium guide to cultivating fruit-bearing Moringa trees with a 98% germination rate</p>
+      <p>A comprehensive guide to cultivating fruit-bearing Moringa trees with a 98% germination rate</p>
     </header>
 
     <img src="https://grow.techfixpro.net/moringa-trees.jpg" alt="Full-grown Moringa Tree" class="hero-image">
 
     <div class="content">
       <h2>Introduction</h2>
-      <p>The Moringa plant, revered as the "miracle tree," is a fast-growing, nutrient-rich species known for its edible leaves, pods, and seeds. Our organic, fruit-bearing Moringa seeds, with an exceptional 98% germination rate, ensure near-guaranteed success for growers. In just 3 years, these seeds can transform into majestic trees reaching 10–12 meters (33–39 feet), yielding abundant pods for harvest. Follow this guide to grow your Moringa using our specialized Aarush soil.</p>
+      <p>The Moringa plant, revered as the "miracle tree," is a fast-growing, nutrient-rich species native to northern India, celebrated for its edible leaves, pods, and seeds. Our organic, fruit-bearing Moringa seeds boast a 98% germination rate, ensuring near-guaranteed success for growers. In just 3 years, these seeds can transform into majestic trees reaching 10–12 meters (33–39 feet), producing 400–600 pods annually for harvest. This comprehensive guide provides detailed steps to grow your Moringa using our specialized Aarush soil, along with its benefits and expert growing tips. <a href="moringa-growing-guide.pdf" id="download-pdf">Download PDF Guide</a>.</p>
 
       <div class="highlight">
         <strong>Why Our Seeds?</strong> Our organic, fruit-bearing Moringa seeds are hand-selected for their 98% germination rate and ability to grow into towering, pod-heavy trees up to 10–12 meters (33–39 feet) in 3 years under ideal conditions.
       </div>
+
+      <h2>Benefits of Moringa</h2>
+      <ul>
+        <li><strong>Nutritional Powerhouse</strong>: Moringa leaves are rich in vitamins A, C, and E, calcium, potassium, and protein, surpassing many common foods (e.g., 7x the vitamin C of oranges, 4x the calcium of milk).</li>
+        <li><strong>Medicinal Properties</strong>: Contains antioxidants and anti-inflammatory compounds, supporting immune health, reducing inflammation, and potentially aiding in blood sugar regulation.</li>
+        <li><strong>Versatile Uses</strong>: Leaves, pods, and seeds are edible, used in culinary dishes, teas, and supplements. The seeds can also produce oil for cooking or skincare.</li>
+        <li><strong>Environmental Benefits</strong>: Moringa trees are drought-tolerant, improve soil health, and can be grown in arid regions, making them sustainable for eco-conscious gardening.</li>
+        <li><strong>Fast Growth</strong>: Reaches maturity quickly, providing shade, food, and economic opportunities within a few years.</li>
+      </ul>
 
       <h2>Materials Needed</h2>
       <ul>
@@ -267,7 +276,7 @@
       <h2>Step-by-Step Guide</h2>
       <ol>
         <li><strong>Acquire Organic Moringa Seeds</strong><br>
-          Start with our organic, fruit-bearing Moringa seeds, boasting a 98% germination rate. Fresh seeds are essential for optimal sprouting success.</li>
+          Start with our organic, fruit-bearing Moringa seeds, boasting a 98% germination rate. Fresh seeds are critical for optimal sprouting success.</li>
         <li><strong>Soak the Seeds</strong><br>
           Mix 1/3 cup of water with 1 teaspoon of 3% hydrogen peroxide in a clean glass. Soak the seeds for 24 hours to soften the seed coat and reduce fungal risks, enhancing germination.</li>
         <li><strong>Prepare the Paper Towel</strong><br>
@@ -277,22 +286,30 @@
         <li><strong>Monitor Germination</strong><br>
           Check daily. Within 3–14 days, the seeds should split, revealing a white root (radicle). With a 98% germination rate, most seeds will sprout successfully.</li>
         <li><strong>Prepare the Pot</strong><br>
-          Fill a 4–6 inch pot with drainage holes using a half-gallon bag of Aarush soil, formulated for Moringa. This amount is perfect for a small pot, ensuring optimal drainage and nutrients.</li>
+          Fill a 4–6 inch pot with drainage holes using a half-gallon bag of Aarush soil, formulated for Moringa. This amount ensures optimal drainage and nutrients.</li>
         <li><strong>Plant the Seeds</strong><br>
           Carefully remove the germinated seed from the paper towel. Plant it 1/4 inch deep in the soil, positioning it sideways so the root split faces to the side for proper growth.</li>
         <li><strong>Water and Maintain</strong><br>
           Water lightly to keep the soil moist but not waterlogged. Place the pot in a warm, sunny spot with at least 6 hours of indirect sunlight daily. Water sparingly, letting the soil dry slightly between waterings.</li>
         <li><strong>Nurture the Tree</strong><br>
-          Sprouts should appear within 1–2 weeks. With proper care, your Moringa can grow into a large tree, reaching 10–12 meters (33–39 feet) in 3 years if unpruned, with abundant fruit pods. Prune annually to 3–4 meters (10–13 feet) for easier harvesting.</li>
+          Sprouts should appear within 1–2 weeks. With proper care, your Moringa can grow into a large tree, reaching 10–12 meters (33–39 feet) in 3 years if unpruned, with abundant fruit pods (400–600 annually). Prune annually to 3–4 meters (10–13 feet) for easier harvesting.</li>
       </ol>
 
       <div class="tip">
-        <strong>Pro Tip:</strong> Moringa thrives in warm, sunny climates with well-draining Aarush soil. Space trees 3 meters apart and prune annually to encourage bushy growth and maximize pod production. Avoid overwatering to prevent root rot.
+        <strong>Expert Growing Tips</strong>
+        <ul>
+          <li><strong>Optimal Climate</strong>: Moringa thrives in tropical or subtropical climates (70–95°F / 21–35°C). In cooler regions, grow in a greenhouse or indoors with ample sunlight.</li>
+          <li><strong>Pruning Techniques</strong>: Prune annually in early spring to 3–4 meters to encourage bushy growth and higher pod yields. Remove dead or crowded branches to improve air circulation.</li>
+          <li><strong>Pest Management</strong>: Monitor for aphids or caterpillars. Use neem oil or insecticidal soap as organic pest control, applied early morning or late evening.</li>
+          <li><strong>Watering Schedule</strong>: Water young plants every 2–3 days, reducing to weekly for established trees. Ensure soil drains well to prevent root rot.</li>
+          <li><strong>F Fertilization</strong>: Use a balanced organic fertilizer (e.g., 10-10-10) every 2–3 months during the growing season to boost growth and pod production.</li>
+          <li><strong>Spacing</strong>: Plant trees 3 meters apart to allow room for growth and optimal sunlight exposure, maximizing pod yield.</li>
+        </ul>
       </div>
     </div>
 
     <footer>
-      <p>© 2025 Organic Moringa Growers Guide</p>
+      <p>© 2025 Organic Moringa Growers Guide | <a href="moringa-growing-guide.pdf" id="download-pdf">Download PDF Guide</a></p>
     </footer>
   </div>
 </body>
